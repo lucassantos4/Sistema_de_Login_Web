@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <main>
+        <form action="/login" method="post">
+            <section id="login-container">
 
-        <section id="login-container">
-            <form action="/login" method="post"></form>
-            <h2>Entrar</h2>
-        </section>
-        <section id="input-login">
-            <label for="email" >E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-        </section>
-        <section>
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
-        </section>
-        <button type="submit">Entrar</button>
-        <p><a href="#">esqueci minha senha</a></p>
+                <h2>Entrar</h2>
+            </section>
+            <section id="input-login">
+                <label for="email" >E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </section>
+            <section>
+                <label for="password">Senha</label>
+                <input type="password" name="senha" id="password" placeholder="Digite sua senha" required>
+            </section>
+            <button type="submit">Entrar</button>
+            <p><a href="/cadastroUsuario">criar uma conta</a></p>
+            <div th:if="${erro}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+        </form>
     </main>
 
 </body>

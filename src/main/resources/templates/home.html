@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="workspace-body">
+
+<nav class="top-bar">
+  <div class="project-info">PROJECT_ALPHA / src / main.dev</div>
+
+  <div class="top-bar-actions">
+    <div class="sys-status"><span class="blink">●</span> LIVE</div>
+    <a href="/logout" class="btn-logout">Exit Session</a>
+  </div>
+</nav>
+
+<div class="workspace-container">
+  <aside class="sidebar">
+    <label>Explorador</label>
+    <ul class="file-tree">
+      <li><span class="folder">📁</span> assets</li>
+      <li class="active-file"><span class="file">📄</span> index.dev</li>
+      <li><span class="file">📄</span> config.sys</li>
+      <li><span class="file">📄</span> network.log</li>
+    </ul>
+    <div class="sidebar-footer">
+      <button class="btn-sm">Novo Arquivo</button>
+    </div>
+  </aside>
+
+  <main class="editor-area">
+    <header class="editor-header">
+      <span class="tab active-tab">index.dev</span>
+      <span class="tab">config.sys</span>
+    </header>
+
+    <div class="code-view">
+      <div class="line-numbers">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+      </div>
+      <pre><code><span class="hl-cmd">run</span> environment.init();
+<span class="hl-var">user</span> = <span th:text="${usuario.nome}">Usuario</span>
+<span class="hl-comment">// Inicializando protocolos brutalistas...</span>
+<span class="hl-cmd">deploy</span> --force;
+<span class="hl-var">status</span> = "ready";</code></pre>
+    </div>
+
+    <section class="terminal-panel">
+      <div class="terminal-header">TERMINAL - OUTPUT</div>
+      <div class="terminal-content">
+        <p>> Compilando módulos...</p>
+        <p>> Conexão estabelecida com o nó central.</p>
+        <p class="text-online">> Pronto para entrada de dados.</p>
+        <p class="cursor">_</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>

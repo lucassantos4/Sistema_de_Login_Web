@@ -52,7 +52,7 @@ public class LoginController {
             return "redirect:/home";
 
         }
-        model.addAttribute("erro","Usuario Invalido!");
+        model.addAttribute("erro","ERRO! Usuário Inválido!");
         return "login";
 
     }

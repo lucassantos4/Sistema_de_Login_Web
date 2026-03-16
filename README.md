@@ -1,23 +1,13 @@
-Sistema de Login Web
+# Sistema de Login Web
 
-Este projeto é um sistema de login para aplicações web, desenvolvido com o objetivo de praticar conceitos básicos de desenvolvimento web, como autenticação de usuários e estrutura de páginas de acesso.
+Projeto simples de **sistema de autenticação web**, desenvolvido para praticar conceitos básicos de desenvolvimento backend e estrutura de aplicações web.
 
-O sistema simula o funcionamento de um fluxo de login, permitindo que usuários acessem uma área do sistema após informar suas credenciais.
+A aplicação simula o fluxo de **cadastro e login de usuários**, permitindo compreender a organização de páginas, controle de acesso e funcionamento de um sistema de autenticação.
 
-Objetivo
+## Tecnologias
+- Java
+- Spring Boot
+- HTML/CSS
 
-O projeto foi criado como estudo e prática de desenvolvimento web, focando em:
-
-Estrutura de páginas de login
-
-Organização de um pequeno sistema web
-
-Compreensão do fluxo de autenticação de usuários
-
-Tecnologias
-
-Java / Spring
-
-Observação
-
-Este projeto tem finalidade educacional, sendo utilizado para aprendizado e prática de desenvolvimento.
+## Objetivo
+Projeto desenvolvido para **fins de estudo e prática**, com foco em desenvolvimento web e estrutura de sistemas de login.
